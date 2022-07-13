@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Application</title>
+</head>
+<body>
+    <h1> Welcome </h1>   
+
+    <form action = "/topic/" method = "POST"> 
+
+    <input type = "text" placeholder = "search a keyword" name = "topic"> 
+    <button type = "submit"> Get news</button>
+    </form>
+
+    {% for post in news %}
+    <h2 style="color:green;">  {{post['title']}} </h2> 
+    <i>{{post['publishedAt']}}</i>
+    <p> {{post['description']}} </p>
+    {% endfor %}
+    
+    {# Display output #}
+    <h1> welcome to {{country}}</h1>
+<!-- 
+    {% if cost>200 %}
+        <h1> Very Costly </h1>
+    {% else %}
+        <h1> Not much costly</h1>
+    {% endif %} -->
+
+</body>
+</html>

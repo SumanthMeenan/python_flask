@@ -1,0 +1,7 @@
+SQLite - Testing/development
+Postgre - Production
+
+We pass diff database url for SQL alchemy 2 connect.
+Code 2 create DB will be same. 
+
+Install flask-sqlalchemy package

@@ -1,0 +1,43 @@
+<table border = 2>
+    {% for user in users %}
+    {% for i in range(50) %} 
+    user[i]
+    <tr>
+        <td>
+            {{user[i]}}
+        </td>
+        <!-- <td>
+            {{user[1]}}
+        </td> -->
+    </tr>
+    {% endfor %}
+</table>
+
+
+<!-- users
+name Email
+sachin sachin@gmail.com
+sumanth sumanth@gmail.com
+.
+. 
+. 
+. 
+
+
+
+
+aradhana aradhana@gmail.com -->
+
+<!-- user 
+sachin sachin@gmail.com
+user[0] 
+sachin 
+user[1] 
+sachin@gmail.com
+
+user 
+sumanth sumanth@gmail.com
+user[0] 
+sumanth 
+user[1] 
+sumanth@gmail.com -->

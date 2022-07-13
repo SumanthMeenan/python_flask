@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+
+     <form action = '' method = "POST">
+
+     
+    {% if id_output[0]!= null  %}
+    
+    <p>  Name: <input type = "text" value = "{{id_output[0]}}" name = "person_name" /> </p>
+    <br>
+    <p>  Email: <input type = "text"  value = "{{id_output[1]}}" name = "mail" /> </p>
+    <br>
+    <p>  DOB: <input type = "text"  value = "{{id_output[2]}}" name = "dob" /> </p>
+    <br>
+    <p>  Salary: <input type = "text" value = "{{id_output[3]}}" name = "ctc" /> </p>
+    <br>
+    <p>  Company ID: <input type = "text" value = "{{id_output[4]}}" name = "id" /> </p>
+    <br> 
+
+    <p> <input type = 'submit' value=" submit" /> </p>
+
+    {% else %}
+    <p> Member Id is not found in Database</p>
+    {% endif %}
+
+
+    <!-- <P> Name: {{id_output[0]}} </P> -->
+
+</form>
+    
+
+
+</body>
+</html>
